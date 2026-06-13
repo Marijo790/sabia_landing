@@ -1,0 +1,35 @@
+<section id="objectives" class="objectives">
+  <div class="obj-inner">
+    <div class="obj-main">
+      <span class="section-tag light">Objetivo general</span>
+      <h2>Una plataforma que<br>transforma vidas</h2>
+      <p class="obj-desc">
+        Desarrollar el Sistema de Alfabetización Basado en Inteligencia Artificial (SABIA),
+        integrando la metodología de Freire y tecnologías adaptativas para que jóvenes y adultos
+        aprendan a leer y escribir de manera personalizada, intuitiva y efectiva, promoviendo la
+        autonomía del aprendizaje y contribuyendo a reducir el rezago educativo.
+      </p>
+
+      <div class="obj-metric">
+        <div class="metric">
+          <strong>97%</strong>
+          <span>de usuarios valoran la facilidad de uso</span>
+        </div>
+        <div class="metric">
+          <strong>50+</strong>
+          <span>entrevistas para identificar necesidades reales</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="obj-specifics">
+      <span class="section-tag">Objetivos específicos</span>
+      <ul>
+        <li *ngFor="let item of specifics; let i = index">
+          <span class="num">0{{ i + 1 }}</span>
+          <p>{{ item }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

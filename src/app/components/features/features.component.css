@@ -1,0 +1,76 @@
+.features {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.features-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 64px;
+}
+
+.section-header p {
+  color: #556;
+  line-height: 1.75;
+  margin-top: 16px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  padding: 32px 28px;
+  border-radius: 20px;
+  background: var(--off-white);
+  border: 1px solid rgba(11,37,69,0.07);
+  transition: transform 0.25s, box-shadow 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.feature-card:hover::before { opacity: 1; }
+
+.feat-icon { margin-bottom: 18px; }
+
+.feature-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.88rem;
+  color: #556;
+  line-height: 1.7;
+}
+
+.feat-teal .feat-icon svg { color: var(--teal); }
+.feat-navy .feat-icon svg { color: var(--navy); }
+.feat-purple .feat-icon svg { color: var(--purple); }
+.feat-crimson .feat-icon svg { color: var(--crimson); }
+.feat-green .feat-icon svg { color: var(--green); }
+
+@media (max-width: 900px) {
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .features-grid { grid-template-columns: 1fr; }
+}

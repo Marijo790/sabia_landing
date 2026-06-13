@@ -1,0 +1,22 @@
+<section id="team" class="team">
+  <div class="team-inner">
+    <div class="section-header">
+      <span class="section-tag">Equipo</span>
+      <h2>Las personas detras<br>de SABIA</h2>
+      <p>Un equipo interdisciplinario comprometido con la educacion inclusiva y la innovacion tecnologica.</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="member-card" *ngFor="let m of members" [class]="'mc-' + m.color">
+        <div class="avatar">{{ m.initials }}</div>
+        <strong>{{ m.name }}</strong>
+        <span>{{ m.role }}</span>
+      </div>
+    </div>
+
+    <div class="collab-banner">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <p>Proyecto desarrollado en el estado de <strong>Veracruz, Mexico</strong>, en colaboracion con el <strong>IVEA</strong> (Instituto Veracruzano de Educacion para Adultos).</p>
+    </div>
+  </div>
+</section>

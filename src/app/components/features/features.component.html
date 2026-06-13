@@ -1,0 +1,17 @@
+<section id="features" class="features">
+  <div class="features-inner">
+    <div class="section-header">
+      <span class="section-tag">Caracteristicas</span>
+      <h2>Tecnologia al servicio<br>del aprendizaje</h2>
+      <p>Cada funcion de SABIA esta disenada para eliminar barreras y hacer que el proceso de alfabetizacion sea natural, motivador y efectivo.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card" *ngFor="let f of features" [class]="'feat-' + f.color">
+        <div class="feat-icon" [innerHTML]="f.icon"></div>
+        <h3>{{ f.title }}</h3>
+        <p>{{ f.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

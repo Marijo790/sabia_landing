@@ -1,0 +1,31 @@
+<section id="methodology" class="methodology">
+  <div class="meth-inner">
+    <div class="section-header">
+      <span class="section-tag">Metodologia</span>
+      <h2>Pedagogia y tecnologia<br>en armonia</h2>
+      <p>SABIA integra dos enfoques metodologicos complementarios: la pedagogia humanista de Paulo Freire y el desarrollo agil con Scrum, garantizando un producto educativo solido y centrado en el usuario.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar" *ngFor="let p of pillars">
+        <div class="pillar-icon" [innerHTML]="p.icon"></div>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.desc }}</p>
+      </div>
+    </div>
+
+    <div class="sprints-section">
+      <h3 class="sprints-title">Fases de desarrollo</h3>
+      <div class="sprints-list">
+        <div class="sprint" *ngFor="let s of sprints">
+          <div class="sprint-num">{{ s.num }}</div>
+          <div class="sprint-info">
+            <strong>{{ s.title }}</strong>
+            <p>{{ s.detail }}</p>
+          </div>
+          <div class="sprint-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

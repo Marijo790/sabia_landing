@@ -1,0 +1,103 @@
+.about {
+  padding: 100px 0;
+  background: var(--off-white);
+}
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #445;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.about-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.pill {
+  background: rgba(11,120,164,0.1);
+  color: var(--navy-mid);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 99px;
+  border: 1px solid rgba(11,120,164,0.2);
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  border-top: 4px solid transparent;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.about-card:hover { transform: translateY(-4px); }
+
+.about-card svg { margin-bottom: 14px; }
+
+.about-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  font-size: 0.85rem;
+  color: #556;
+  line-height: 1.6;
+}
+
+.accent-teal { border-top-color: var(--teal); }
+.accent-teal svg { color: var(--teal); }
+
+.accent-navy { border-top-color: var(--navy); }
+.accent-navy svg { color: var(--navy); }
+
+.accent-crimson { border-top-color: var(--crimson); }
+.accent-crimson svg { color: var(--crimson); }
+
+.accent-green { border-top-color: var(--green); }
+.accent-green svg { color: var(--green); }
+
+@media (max-width: 900px) {
+  .about-inner { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 480px) {
+  .about-cards { grid-template-columns: 1fr; }
+}
